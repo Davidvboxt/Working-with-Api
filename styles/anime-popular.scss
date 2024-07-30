@@ -1,0 +1,37 @@
+.section__popular {
+    color: white;
+    width: 92rem;
+    margin: auto;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .embla {
+        overflow: hidden;
+    }
+
+    .embla__container {
+        display: flex;
+    }
+
+    .embla__slide {
+        flex: 0 0 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1240px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 870px) {}
+
+@media (max-width: 610px) {}

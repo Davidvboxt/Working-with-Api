@@ -1,10 +1,11 @@
 import React from "react";
-import { List } from "./List";
+import { AnimePopular, Header } from "./";
 
 export const Home = () => {
   return (
     <div>
-      <List />
+      <Header />
+      <AnimePopular />
     </div>
   );
 };
