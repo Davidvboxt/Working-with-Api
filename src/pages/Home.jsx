@@ -1,11 +1,12 @@
 import React from "react";
-import { AnimePopular, Header } from "./";
+import { AnimePopular, Header, Categories } from "../components";
 
 export const Home = () => {
   return (
-    <div>
+    <main>
       <Header />
+      <Categories />  
       <AnimePopular />
-    </div>
+    </main>
   );
 };

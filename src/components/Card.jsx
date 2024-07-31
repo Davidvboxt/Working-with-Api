@@ -8,7 +8,7 @@ export const Card = ({ all }) => {
         <div className='cardImg'>
           <img src={all.images.jpg.image_url} alt='' />
         </div>
-        <h1>{all.title}</h1>
+        {/* <h1>{all.title}</h1> */}
       </div>
     </Link>
   );

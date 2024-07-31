@@ -1,5 +1,5 @@
 
-import { Onepiece } from '../'
+import { Onepiece, Attackontitan, Jujutsukaisen } from '../'
 
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade(), Autoplay({ delay: 8000 })]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -51,7 +51,7 @@ const EmblaCarousel = (props) => {
           <div className='slide__background jujutsukaisen'>
             <div className='slide'>
               <div className="embla__slide slide__3">
-
+                <Jujutsukaisen />
                 <div className="embla__controls block__6">
                   <div className="embla__buttons">
                     <button
@@ -76,7 +76,7 @@ const EmblaCarousel = (props) => {
           <div className='slide__background attackontitan'>
             <div className='slide'>
               <div className="embla__slide slide__2">
-
+                <Attackontitan /> 
                 <div className="embla__controls block__6">
                   <div className="embla__buttons">
                     <button

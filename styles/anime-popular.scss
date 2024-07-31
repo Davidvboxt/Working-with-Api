@@ -6,32 +6,138 @@
     padding-left: 1rem;
     padding-right: 1rem;
 
-    h2 {
-        font-size: 1.5rem;
-        font-weight: 500;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            cursor: pointer;
+        }
     }
+
+
 
     .embla {
         overflow: hidden;
+        position: relative;
+
+        a {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.1333333333) 0 1.6px 3.6px, rgba(0, 0, 0, 0.1098039216) 0 0.3px 0.9px;
+            width: 14rem;
+
+            .card {
+                border-radius: 19px;
+                overflow: hidden;
+                height: 100%;
+
+                .cardImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .embla__button--left {
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            display: grid;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            background: hsla(0, 0%, 8%, .5);
+            left: 0px;
+            align-content: center;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .embla__button--right {
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            display: grid;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            background: hsla(0, 0%, 8%, .5);
+            right: 0px;
+            align-content: center;
+            border-radius: 15px 0px 0px 15px;
+        }
+    }
+
+    .embla:hover {
+
+        .embla__button--left {
+            opacity: 1;
+        }
+
+        .embla__button--right {
+            opacity: 1;
+        }
     }
 
     .embla__container {
         display: flex;
+        gap: 1rem;
     }
 
     .embla__slide {
         flex: 0 0 100%;
         min-width: 0;
     }
+
+    img {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1530px) {
+
+    .section__popular {
+        width: auto;
+    }
 }
 
 @media (max-width: 1400px) {}
 
-@media (max-width: 1240px) {}
+@media (max-width: 1240px) {
+
+    .section__popular {
+
+        .embla {
+            a {
+                width: 12rem;
+                height: 18rem;
+            }
+        }
+    }
+}
 
 @media (max-width: 1024px) {}
 
-@media (max-width: 870px) {}
+@media (max-width: 870px) {
+
+    .section__popular {
+
+        .embla {
+            a {
+                width: 11rem;
+                height: 17rem;
+            }
+        }
+    }
+}
 
 @media (max-width: 610px) {}

@@ -11,6 +11,10 @@
     --padding-default: 1rem;
 }
 
+* {
+    font-family: "Archivo Black", sans-serif;
+}
+
 main {
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     /* background: linear-gradient(to right, #434343 0%, black 100%); */
@@ -34,3 +38,10 @@ ul {
     margin: 0;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
