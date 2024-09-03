@@ -11,7 +11,7 @@ import "../styles/header.scss";
 
 import "../styles/categories.scss";
 
-import "../styles/anime-popular.scss";
+import "../styles/anime-list.scss";
 
 function App() {
   return (

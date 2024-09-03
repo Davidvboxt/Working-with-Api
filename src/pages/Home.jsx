@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimePopular, Header, Categories } from "../components";
+import { AnimePopular, Header, Categories, AnimeTopPicks } from "../components";
 
 export const Home = () => {
   return (
@@ -7,6 +7,7 @@ export const Home = () => {
       <Header />
       <Categories />  
       <AnimePopular />
+      <AnimeTopPicks />
     </main>
   );
 };

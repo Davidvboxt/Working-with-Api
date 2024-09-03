@@ -1,5 +1,6 @@
 // API DATA
 export { default as AnimePopular } from "./anime-popular/anime-popular";
+export { default as AnimeTopPicks } from "./anime-top-picks/anime-top-picks";
 export { default as Categories } from "./categories/categories";
 
 // HEADER

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
-import { Card } from "../Card";
+import { Cardrecommended } from "../Card-rec";
 import { useParams } from "react-router-dom";
 
 import useEmblaCarousel from 'embla-carousel-react'
@@ -27,6 +27,7 @@ const animePopular = (props) => {
   const fetch = async () => {
     const data = await axios.get(
       `https://api.jikan.moe/v4/top/${id ? id : "anime"}`
+
     );
     setAnime(data.data.data);
 
@@ -47,7 +48,7 @@ const animePopular = (props) => {
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           {anime?.map(naruto => (
-            <Card all={naruto} key={naruto.mal_id} />
+            <Cardrecommended all={naruto} key={naruto.mal_id} />
           ))}
         </div>
 
